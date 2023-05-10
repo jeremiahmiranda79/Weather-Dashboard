@@ -54,7 +54,7 @@ function getCurrentDateAndTime() {
 }
 
 function getGeocodingCoords(city) {
-    var url = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=' + apiKey;
+    var url = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + '&appid=' + apiKey;
 
     fetch(url).then(function (response) {
             response.json().then(function (data) {
